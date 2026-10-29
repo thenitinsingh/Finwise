@@ -15,7 +15,7 @@ export function loadConfig(env = process.env) {
     .map((origin) => origin.trim())
     .filter(Boolean);
 
-  const port = Number.parseInt(env.PORT ?? '', 10);
+  const port = process.env.PORT || Number.parseInt(env.PORT ?? '', 10);
 
   return {
     port: Number.isInteger(port) && port > 0 ? port : DEFAULT_PORT,
