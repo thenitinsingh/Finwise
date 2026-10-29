@@ -50,7 +50,7 @@ export function TopBar({ aiConfigured, healthKnown, onClear, canClear }) {
   return (
     <header className="topbar" id="overview">
       <div>
-        <h1>Finwise - Finance Intelligence Agent</h1>
+        <h1>Finwise</h1>
         <p className="subtitle"> Your AI guide to understanding your spending patterns and help you make smarter spending decisions.</p>
       </div>
       <div className="topbar-actions">
